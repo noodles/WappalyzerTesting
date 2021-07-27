@@ -1,3 +1,5 @@
+# Astra WP Theme Detection & Testing
+
 Entry in technologies.json file for Detecting Astra theme:
 
 ```"Astra": {
@@ -29,7 +31,8 @@ Entry in technologies.json file for Detecting Astra theme:
       }
 ```
 
-Results when tested against a list of Astra WP sites:
+This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of Astra WP URLs from this [Astra Wordpress Theme Examples site](https://winningwp.com/astra-wordpress-theme-examples/).
+When tested using the code above, the following was detected:
       
 
 | URL | Theme | Version |
