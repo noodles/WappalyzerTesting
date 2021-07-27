@@ -32,7 +32,7 @@ Entry in technologies.json file for Detecting Astra theme:
 ```
 
 This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of Astra WP URLs from this [Astra Wordpress Theme Examples site](https://winningwp.com/astra-wordpress-theme-examples/).
-When tested using the code above, the following was detected:
+When tested using the code above, all version numbers detected matched the pattern assigned to [Astra release versions](https://wpastra.com/changelog/astra-theme/).
       
 
 | URL | Theme | Version |
