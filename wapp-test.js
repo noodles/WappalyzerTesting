@@ -4,7 +4,7 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const urls = []
 
-fs.createReadStream('HelloElSites.csv')
+fs.createReadStream('astra_urls.csv')
   .pipe(csv())
   .on('data', (data) => urls.push(data.url))
   .on('end', () => {
@@ -37,10 +37,9 @@ fs.createReadStream('HelloElSites.csv')
     
                 if(categories[k].id == 80) {
                     
-                  console.log("TRUE")
+                  
                     if (outputCSV.length > 0) outputCSV += '\n'
                     outputCSV += url + ', ' + technologies[j].name + ', '
-                    
                     //Check if version number has been detected & print N/A if it hasn't
                     if (technologies[j].version) {
                         outputCSV += technologies[j].version
