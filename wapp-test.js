@@ -11,57 +11,71 @@ fs.createReadStream('astra_urls.csv')
 
     const wappalyzer = new Wappalyzer()
 
-;(async function() {
-  try {
-    await wappalyzer.init()
+      ; (async function () {
+        try {
+          await wappalyzer.init()
 
-    const results = await Promise.all(
-      urls.map(async (url) => ({
-        url,
-        results: await wappalyzer.open(url).analyze()
-      }))
-    )
-    
-    var outputCSV = ''
+          const results = await Promise.all(
+            urls.map(async (url) => ({
+              url,
+              results: await wappalyzer.open(url).analyze()
+            }))
+          )
 
-    for (var i = 0; i < results.length; i++){
+          var allThemeInfo = []
+          
 
-        var technologies = results[i].results.technologies
-        var url = results[i].url
+          for (var i = 0; i < results.length; i++) {
 
-        for (var j = 0; j < technologies.length; j++){
+            var themeInfo = {}
+            var technologies = results[i].results.technologies
+            var theme = ''
+            var version = ''
 
-            var categories = technologies[j].categories
-    
-            for (var k = 0; k < categories.length; k++){
-    
-                if(categories[k].id == 80) {
-                    
-                  
-                    if (outputCSV.length > 0) outputCSV += '\n'
-                    outputCSV += url + ', ' + technologies[j].name + ', '
-                    //Check if version number has been detected & print N/A if it hasn't
-                    if (technologies[j].version) {
-                        outputCSV += technologies[j].version
-                    } else {
-                        outputCSV += 'N/A'
-                    }
-                    
+            for (var j = 0; j < technologies.length; j++) {
+
+              var categories = technologies[j].categories
+              for (var k = 0; k < categories.length; k++) {
+
+                if (categories[k].id == 80) {
+
+                  theme = technologies[j].name
+                  //Check if version number has been detected & print N/A if it hasn't
+                  if (technologies[j].version) {
+                    version = technologies[j].version 
+                  }
                 } 
-                
+              }
+              
             }
+            themeInfo['url'] = results[i].url
+            if(theme.length > 0) {
+              themeInfo['theme'] = theme
+              if(version.length > 0) {
+                themeInfo['version'] = version
+              } else {
+                themeInfo['version'] ="N/A"
+              }
+            } else {
+              themeInfo['theme'] = "No theme detected"
+              themeInfo['version'] ="N/A"
+            }
+            allThemeInfo.push(themeInfo)
+            //console.log(themeInfo)
+          }
+
+          // Output for use in table on GitHub
+          console.log("| URL | Theme | Version |\n| ---------- |:-------------:| :-----:|")
+          allThemeInfo.forEach((themeRow) =>  {
+            console.log("|" + themeRow.url + " | " + themeRow.theme + " | " + themeRow.version + "|")
+          })
+
+        } catch (error) {
+          console.error(error)
         }
 
-    }
-
-    console.log(outputCSV)
-
-  } catch (error) {
-    console.error(error)
-  }
-
-  await wappalyzer.destroy()
-})()
+        await wappalyzer.destroy()
+      })()
 
   }
-);
+  );
