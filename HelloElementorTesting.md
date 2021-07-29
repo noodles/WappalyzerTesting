@@ -1,36 +1,5 @@
 # Hello Elementor WP Theme Detection & Testing
 
-Entry in technologies.json file for Detecting Hello Elementor theme:
-
-```"Astra": {
-      "cats": [
-        80
-      ],
-      "description": "Astra is a fast, lightweight, and highly customizable WordPress Theme.",
-      "icon": "astra.png",
-      "pricing": [
-        "low",
-        "freemium"
-      ],
-      "scripts": "themes/astra.*\\.js\\?ver=([0-9.]+)\\;version:\\1",
-      "dom": {
-        "link[href*='themes/astra',style[id*='astra-theme']": {
-          "attributes": { 
-            "href": "astra/.*\\.css\\?ver=([0-9.]+)\\;version:\\1"
-          }
-        },
-        "style[id*='astra-theme']": {
-          "text": ""
-        },
-        "body[class*='astra-']": {
-          "text": ""
-        },
-        "script[id*='astra-']": {
-          "text": ""
-        }
-      }
-```
-
 TODO: update this section
 This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of Astra WP URLs from this [Astra Wordpress Theme Examples site](https://winningwp.com/astra-wordpress-theme-examples/).
 When tested using the code above, all version numbers detected matched the pattern assigned to [Astra release versions](https://wpastra.com/changelog/astra-theme/).
@@ -81,3 +50,39 @@ When tested using the code above, all version numbers detected matched the patte
 | [https://www.tophatclassics.com](https://www.tophatclassics.com) | No theme detected | N/A | Sparkling theme |
 | [http://theverahotel.com](http://theverahotel.com) | No theme detected | N/A | toscana - WooCommerce |
 | [https://www.vitalhat.com](https://www.vitalhat.com) | No theme detected | N/A | WooCommerce, Generate Press & Elementor all mentioned |
+
+Entry in technologies.json file for Detecting Hello Elementor theme:
+
+```    "Hello Elementor": {
+      "cats": [
+        80
+      ],
+      "description": "Hello Elementor is a WordPress theme built for the Elementor website builder platform. It uses minimal styling and scripts for maximum speed and design freedom.",
+      "icon": "Hello Elementor.png",
+      "pricing": [
+        "low",
+        "freemium"
+      ],
+      "dom": {
+        "link[id*='hello-elementor']": {
+          "attributes": { 
+            "href": "hello-elementor.*\\.css\\?ver=([0-9.]+)\\;version:\\1"
+          }
+        },
+        "link[id*='elementor-hello']": {
+          "attributes": { 
+            "href": "elementor-hello.*\\.css\\?ver=([0-9.]+)\\;version:\\1"
+          }
+        },
+        "link[id*='hello-elementor']": {
+          "text": ""
+        },
+        "script[id*='hello-elementor']": {
+          "text": ""
+        }
+      },
+      "implies": "Elementor",
+      "requires": "WordPress",
+      "website": "https://elementor.com/hello-theme/"
+    }
+```
