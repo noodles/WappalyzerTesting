@@ -7,26 +7,28 @@ When tested using the code above, all version numbers detected matched those out
 
 | URL | Theme | Version |
 | ---------- |:-------------:| :-----:|
-|https://www.gamefacemedia.com/ | No theme detected | N/A|
-|https://blog.website.com/ | Sydney | N/A|
-|https://www.westsystem.com/ | Sydney | N/A|
-|http://www.yogacards.com/ | Sydney | 1.39.1497307271|
+|http://www.yogacards.com/ | Sydney | 5.7.2|
 |https://www.yospace.com/ | Sydney | 5.7.2|
-|http://go.gilbarco.com/ | No theme detected | N/A|
-|https://www.peegeos.com/ | Sydney | N/A|
-|https://eurocase2017.psnc.pl/ | Sydney | N/A|
-|http://jannieliu.sites.gettysburg.edu/ | Sydney | N/A|
+|https://www.gamefacemedia.com/ | Sydney | 4.9.18|
+|http://go.gilbarco.com/ | Sydney | 4.9.18|
+|https://blog.website.com/ | Sydney | 1|
+|https://eurocase2017.psnc.pl/ | Sydney | 1|
+|http://jannieliu.sites.gettysburg.edu/ | Sydney | 1|
+|https://www.peegeos.com/ | Sydney | 1|
+|https://www.westsystem.com/ | Sydney | 1|
+
+
 
 Entry in technologies.json file for Detecting Sydney theme:
 
-```    "Sydney": {
+```   "Sydney": {
       "cats": [
         80
       ],
       "description": "Sydney is a powerful business theme that provides a fast way for companies or freelancers to create an online presence. Built by aThemes.",
       "icon": "athemes.png",
       "dom": {
-        "link[id*='sydney-style']": {
+        "link[id*='sydney']": {
           "attributes": { 
             "href": "sydney.*\\.css\\?ver=([0-9.]+)\\;version:\\1"
           }
