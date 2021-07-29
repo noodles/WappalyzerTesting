@@ -12,7 +12,8 @@ When tested using the code above, all version numbers detected matched those out
 
 Entry in technologies.json file for Detecting Generate Press theme:
 
-```       "GeneratePress": {
+```       
+"GeneratePress": {
       "cats": [
         80
       ],
