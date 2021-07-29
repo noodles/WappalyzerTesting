@@ -7,11 +7,9 @@ When tested using the code above, all version numbers detected matched those out
 
 | URL | Theme | Version |
 | ---------- |:-------------:| :-----:|
-|https://health.mingpao.com | ColorMag | N/A|
 |http://health.mingpao.com | ColorMag | N/A|
 |http://blockchaind.net | ColorMag | 5.5.5|
-|http://www.viraltowns.com | No theme detected | N/A|
-|https://www.stars-hk.com/ | No theme detected | N/A|
+|https://www.stars-hk.com/ | ColorMag | 2.0.6|
 
 
 
