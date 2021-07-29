@@ -1,8 +1,8 @@
-# WappalyzerTesting
+# Wappalyzer Them Detection
 
 Some bits & pieces I've been using to add Wordpress theme detection to Wappalyzer.
 
-### Theme Detection Methodology & Testing
+### Methodology & Testing
 
 * [Astra](https://github.com/noodles/WappalyzerTesting/blob/main/AstraThemeTesting.md)
 * [Hello Elementor](https://github.com/noodles/WappalyzerTesting/blob/main/HelloElementorTesting.md)
