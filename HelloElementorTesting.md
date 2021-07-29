@@ -1,8 +1,7 @@
 # Hello Elementor WP Theme Detection & Testing
 
-TODO: update this section
-This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of Astra WP URLs from this [Astra Wordpress Theme Examples site](https://winningwp.com/astra-wordpress-theme-examples/).
-When tested using the code above, all version numbers detected matched the pattern assigned to [Astra release versions](https://wpastra.com/changelog/astra-theme/).
+This [script](https://github.com/noodles/WappalyzerTesting/blob/main/helloElScraper.js) was used to generate a list of WP URLs from this [site](https://wpdonuts.com/examples-of-websites-using-elementor/).
+Deteced version numbers all match the dd.dd.dd pattern.
       
 
 | URL | Theme | Version | Comment |
