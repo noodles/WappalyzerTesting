@@ -1,21 +1,16 @@
 # Generate Press Theme Detection & Testing
 
-A list of [Generate Press](https://generatepress.com/) URLs was sraped from this [site](https://wpslug.com/wordpress/theme/colormag/websites/).
+A list of [Generate Press](https://generatepress.com/) URLs was sraped from this [site](https://wplift.com/generatepress-examples-showcase).
 
 When tested using the code above, all version numbers detected matched those outlined in the [Generate Press release list](https://generatepress.com/category/development/).
       
 
 | URL | Theme | Version |
 | ---------- |:-------------:| :-----:|
-|https://health.mingpao.com | ColorMag | N/A|
-|http://health.mingpao.com | ColorMag | N/A|
-|http://blockchaind.net | ColorMag | 5.5.5|
-|http://www.viraltowns.com | No theme detected | N/A|
-|https://www.stars-hk.com/ | No theme detected | N/A|
 
 
 
-Entry in technologies.json file for Detecting Sydney theme:
+Entry in technologies.json file for Detecting Generate Press theme:
 
 ```       "GeneratePress": {
       "cats": [
