@@ -5,13 +5,13 @@ Some bits & pieces I've been using to add Wordpress theme detection to Wappalyze
 ### Methodology & Testing
 
 * [Astra](https://github.com/noodles/WappalyzerTesting/blob/main/AstraThemeTesting.md)
+* [ColorMag](https://github.com/noodles/WappalyzerTesting/blob/main/ColorMagTesting.md)
+* [GeneratePress](https://github.com/noodles/WappalyzerTesting/blob/main/GeneratePressTesting.md)
 * [Hello Elementor](https://github.com/noodles/WappalyzerTesting/blob/main/HelloElementorTesting.md)
-* OceanWP
-* GeneratePress
-* Neve
-* ColorMag
 * Hestia
-* Sydney
+* Neve
+* [OceanWP](https://github.com/noodles/WappalyzerTesting/blob/main/OceanWPTesting.md)
+* [Sydney](https://github.com/noodles/WappalyzerTesting/blob/main/SydneyTesting.md)
 * Wordpress Default Themes
 
 
