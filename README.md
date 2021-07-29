@@ -8,8 +8,8 @@ Some bits & pieces I've been using to add Wordpress theme detection to Wappalyze
 * [ColorMag](https://github.com/noodles/WappalyzerTesting/blob/main/ColorMagTesting.md)
 * [GeneratePress](https://github.com/noodles/WappalyzerTesting/blob/main/GeneratePressTesting.md)
 * [Hello Elementor](https://github.com/noodles/WappalyzerTesting/blob/main/HelloElementorTesting.md)
-* Hestia
-* Neve
+* [Hestia](https://github.com/noodles/WappalyzerTesting/blob/main/HestiaTesting.md)
+* [Neve](https://github.com/noodles/WappalyzerTesting/blob/main/NeveTesting.md)
 * [OceanWP](https://github.com/noodles/WappalyzerTesting/blob/main/OceanWPTesting.md)
 * [Sydney](https://github.com/noodles/WappalyzerTesting/blob/main/SydneyTesting.md)
 * Wordpress Default Themes
