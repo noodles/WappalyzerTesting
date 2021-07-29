@@ -1,4 +1,4 @@
-# Wappalyzer Them Detection
+# Wappalyzer Theme Detection
 
 Some bits & pieces I've been using to add Wordpress theme detection to Wappalyzer.
 
