@@ -3,12 +3,12 @@
 TODO: update script link
 This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of OceanWP URLs from this [Over 15 Top Examples of Websites Using The OceanWP WordPress Theme (2021)](https://wpdonuts.com/examples-of-websites-using-oceanwp/).
 
-When tested using the code above, all version numbers detected matched the pattern assigned to [OceanWP change log](https://docs.oceanwp.org/article/653-oceanwp-theme-changelog) (1.0.0 - 3.0.2).
+When tested using the code above, all version numbers detected matched the patterns described in the [OceanWP change log](https://docs.oceanwp.org/article/653-oceanwp-theme-changelog) (1.0.0 - 3.0.2).
 
       
 
 | URL | Theme | Version | Comment |
-| ---------- |:-------------:| :-----:|
+| ---------- |:-------------:| :-----:| ----- |
 |https://www.aprimoredecor.com.br | OceanWP | 1.0|
 |https://www.connectcue.com | OceanWP | 1.0|
 |https://quarteldesign.com | OceanWP | 1.0.0|
