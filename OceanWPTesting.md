@@ -1,26 +1,29 @@
 # OceanWP Theme Detection & Testing
 
-TODO: update this section
-This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of Astra WP URLs from this [Astra Wordpress Theme Examples site](https://winningwp.com/astra-wordpress-theme-examples/).
-When tested using the code above, all version numbers detected matched the pattern assigned to [Astra release versions](https://wpastra.com/changelog/astra-theme/).
+TODO: update script link
+This [script](https://github.com/noodles/WappalyzerTesting/blob/main/astraScraper.js) was used to generate a list of OceanWP URLs from this [Over 15 Top Examples of Websites Using The OceanWP WordPress Theme (2021)](https://wpdonuts.com/examples-of-websites-using-oceanwp/).
+
+When tested using the code above, all version numbers detected matched the pattern assigned to [OceanWP change log](https://docs.oceanwp.org/article/653-oceanwp-theme-changelog) (1.0.0 - 3.0.2).
+
       
 
-| URL | Theme | Version |
+| URL | Theme | Version | Comment |
 | ---------- |:-------------:| :-----:|
 |https://www.aprimoredecor.com.br | OceanWP | 1.0|
-|https://hearttomarket.com | OceanWP | 1.7.2|
-|https://progreso.com.sg | No theme detected | N/A|
 |https://www.connectcue.com | OceanWP | 1.0|
-|https://www.webtimiser.de | OceanWP | N/A|
-|https://refrescandonegocios.com | OceanWP | N/A|
-|https://hopefoods.com | OceanWP | N/A|
-|http://ema-locksmith.com | OceanWP | N/A|
 |https://quarteldesign.com | OceanWP | 1.0.0|
-|http://woodennickelsportsbar.com | OceanWP | N/A|
 |https://la-solargroup.com | OceanWP | 1.0|
 |https://northhillschurch.com | OceanWP | 1.0|
+|https://hearttomarket.com | OceanWP | 1.7.2|
 |https://splhelmet.com | OceanWP | 2.0.2|
 |http://www.strategycom.eu | OceanWP | 2.0.7|
+|http://ema-locksmith.com | OceanWP | N/A|
+|https://hopefoods.com | OceanWP | N/A|
+|https://refrescandonegocios.com | OceanWP | N/A|
+|http://woodennickelsportsbar.com | OceanWP | N/A|
+|https://www.webtimiser.de | OceanWP | N/A| 
+|https://progreso.com.sg | No theme detected | N/A| Time out |
+
 
 Entry in technologies.json file for Detecting Hello Elementor theme:
 
